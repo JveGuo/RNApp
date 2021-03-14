@@ -6,15 +6,18 @@ import {
   HeaderStyleInterpolators,
   StackNavigationProp,
 } from '@react-navigation/stack';
-import Home from '@/pages/Home/Home';
-import Details from '@/pages/Details/Details';
+// import Home from '@/pages/Home/Home';
+// import Details from '@/pages/Details/Details';
 import { Platform, StyleSheet } from 'react-native';
+import BottomTabs from '@/navigator/BottomTabs';
+import Test from '@/pages/Test/test';
 
 export type RootStackParamsList = {
-  Home: undefined;
-  Details: {
-    id: number;
-  };
+  BottomTabs: undefined;
+  // Details: {
+  //   id: number;
+  // };
+  Test: undefined;
 };
 
 export type RootStackNavigation = StackNavigationProp<RootStackParamsList>;
@@ -46,14 +49,14 @@ const Navigator = () => {
           },
         }}>
         <Stack.Screen
-          name="Home"
+          name="BottomTabs"
           options={{ title: '首页' }}
-          component={Home}
+          component={BottomTabs}
         />
         <Stack.Screen
-          name="Details"
-          options={{ title: '详情页' }}
-          component={Details}
+          name="Test"
+          options={{ title: '测试页' }}
+          component={Test}
         />
       </Stack.Navigator>
     </NavigationContainer>
