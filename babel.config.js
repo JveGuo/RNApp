@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: JveGuo
+ * @Date: 2021-03-15 09:11:57
+ * @LastEditTime: 2021-03-15 10:40:18
+ * @LastEditors: JveGuo
+ */
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
@@ -13,7 +20,7 @@ module.exports = {
           // '@/models': './src/models',
           // '@/config': './src/config',
           '@/components': './src/components',
-          // '@/assets': './src/assets',
+          '@/assets': './src/assets',
         },
       },
     ],

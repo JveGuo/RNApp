@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: JveGuo
+ * @Date: 2021-03-15 09:11:57
+ * @LastEditTime: 2021-03-15 14:46:22
+ * @LastEditors: JveGuo
+ */
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import {
@@ -39,6 +46,8 @@ const Navigator = () => {
           gestureEnabled: true,
           // 改变安卓返回手势的方向
           gestureDirection: 'horizontal',
+          // 设置bar高度
+          // headerStatusBarHeight: StatusBar.currentHeight,
           headerStyle: {
             ...Platform.select({
               android: {
